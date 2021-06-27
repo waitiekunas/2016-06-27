@@ -9,6 +9,7 @@ import { User } from '../types';
 
 export const StyledDiv = styled.div`
   padding: 0.5rem;
+  border: 1px transparent solid;
   border-bottom: 0.5px blue solid;
   cursor: pointer;
   &:hover {

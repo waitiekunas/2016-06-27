@@ -1,9 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-type ContentProps = {
-  direction: "column" | "row";
-};
+import { ContentProps } from '../types';
 
 export const WrapperDiv = styled.div`
   display: flex;
@@ -15,8 +12,3 @@ export const Content = styled.div<ContentProps>`
   display: flex;
   flex-direction: ${(props) => props.direction};
 `;
-export const Wrapper: React.FC = ({ children }) => (
-  <Wrapper>
-    <Content direction="column">{children}</Content>
-  </Wrapper>
-);

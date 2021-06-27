@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Content } from './Wrapper';
+import { Content } from '../styles';
 
 type Props = {
   label: string;
@@ -9,13 +9,12 @@ type Props = {
 };
 
 export const StyledDiv = styled.div`
-  display: flex;
-  justify-content: flex-start;
+  margin-right: 1rem;
 `;
 
 export const Row: React.FC<Props> = ({ label, value }) => (
   <Content direction="row">
-    <div>{label}</div>
+    <StyledDiv>{label}</StyledDiv>
     <div>{value}</div>
   </Content>
 );

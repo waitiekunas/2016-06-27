@@ -19,3 +19,13 @@ export type User = {
   type: string;
   url: string;
 };
+export type ContentProps = {
+  direction: "column" | "row";
+};
+export type UserRepository = {
+  html_url: string;
+  name: string;
+  stargazers_count: number;
+  description: string;
+  language: string;
+};
